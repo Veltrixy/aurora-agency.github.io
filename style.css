@@ -1,0 +1,119 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #002244;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Navegação */
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0055aa;
+}
+
+nav a.ativo {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Articles */
+article {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0066cc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+article:hover {
+  background-color: #eef4ff;
+}
+
+article.noticia {
+  cursor: default;
+  border-left: none;
+}
+
+/* Footer */
+footer {
+  background-color: #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+
+/* Tela pequena (celular) */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    margin: 1rem auto;
+  }
+
+  article {
+    padding: 0.8rem;
+  }
+}
+
+/* Tela média (tablet) */
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    max-width: 700px;
+  }
+}

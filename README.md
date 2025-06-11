@@ -1,1 +1,1 @@
-# Aurora Jornal - 3.1 Commit - OFC - Correct Title
+# Aurora Jornal - 3.2 Commit - OFC - Correct Title

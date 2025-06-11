@@ -1,3 +1,3 @@
-function abrirNoticia(pagina) {
-  window.location.href = pagina;
-}
+// function abrirNoticia(pagina) {
+//   window.location.href = pagina;
+// }

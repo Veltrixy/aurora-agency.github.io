@@ -7,17 +7,18 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #f5f5f5;
+  background: url('./images/main-background.png');
   color: #222;
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background-color: #002244;
+  background-color: rgba(0, 34, 68, .8);
   color: white;
   padding: 1rem;
   text-align: center;
+  
 }
 
 header h1 {
@@ -44,7 +45,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #0055aa;
+  color: #000;
+  background-color: #c2f6fa;
 }
 
 nav a.ativo {
@@ -71,6 +73,18 @@ article {
 article:hover {
   background-color: #c4d9ff;
   transition: .8s;
+}
+
+article h1.title-opnion {
+  background-color: rgba(148, 148, 148, .4);
+  color: rgb(15, 15, 128);
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 35px;
 }
 
 article.noticia {
